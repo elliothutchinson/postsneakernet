@@ -1,0 +1,19 @@
+# docker compose -p postsneakernet -f docker/compose.yml build
+# docker compose -p postsneakernet -f docker/compose.yml up
+# docker compose -p postsneakernet -f docker/compose.yml down
+# docker exec -it postsneakernet-web-1 bash
+
+services:
+
+  web:
+    build:
+      context: ..
+      dockerfile: ./docker/Dockerfile
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    volumes:
+      - ../web:/app/web:cached
+      - ../docs:/app/docs:cached
+    env_file:
+      - ./web.env
