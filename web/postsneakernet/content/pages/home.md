@@ -13,5 +13,3 @@ Decade+ industry experience building and delivering high-quality solutions.
 ✅ Cloud <br />
 ✅ Consulting <br />
 >
-
-Inquiries refer to [contact](/pages/contact) page.
